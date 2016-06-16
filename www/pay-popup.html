@@ -1,47 +1,53 @@
 <!doctype html>
 <html>
 
-  <head>
-    <title>Cheerbud</title>
-    <script src="popup.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
+<head>
+  <title>Cheerbud</title>
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+  <script src="pay.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-  <body>
-    <div class="wrapper">
+<body>
+<div class="wrapper">
 
-    	<section class="start-1">
-    		
-    		<div class="h1">Choose your cheer amount</div>
-        <img src="img/video1.png">
-        <h3><input type="number" placeholder="1" max="20" class="cheerprice"><span>$</span></h3>
+  <section class="start-1">
 
-    	</section>
-
-      <section class="bank-info">
-        <div>
-          <img src="img/card1.png">
-          <img src="img/card2.png">
-          <img src="img/card3.png">
-          <img src="img/card4.png">
-        </div>
-        
-        <input type="email" placeholder="Email here"> <br>
-        <input type="text" placeholder="Card holder name"> <br>
-        <input type="password" placeholder="xxxxx - xxxxx - xxxxx"> <br>
-        <input type="text" class="date" placeholder="xx/xx/xx" maxlength="8"><input type="text" placeholder="CCV" maxlength="3" class="ccv"> <br><br>
-        <input type="checkbox" class="checkbox"> accept terms and conditions
-      </section><br>
-      
-      <a href="comment-popup.html" class="btn">Cheerpay now !</a> <br>
-      <a href="video-popup.html" class="skip">go back / cancel</a>
-
-      <footer>
-      	<a href="https://www.youtube.com/" target="_blank">www.cheerbud.com</a>
-      </footer>
-
+    <div class="h1">Choose your cheer amount</div>
+    <div class="cover-img">
+      <p id="video-img-cover" style=""></p>
     </div>
-  </body>
+    <p class="title-video"></p>
+    <h3><input type="number" placeholder="1" max="20" class="cheerprice"><span>$</span></h3>
 
+  </section>
+
+  <section class="bank-info">
+    <div>
+      <img src="img/card1.png">
+      <img src="img/card2.png">
+      <img src="img/card3.png">
+      <img src="img/card4.png">
+    </div>
+
+    <input type="email" placeholder="Email here"> <br>
+    <input type="text" placeholder="Card holder name"> <br>
+    <input type="password" placeholder="xxxxx - xxxxx - xxxxx"> <br>
+    <input type="text" class="date" placeholder="xx/xx/xx" maxlength="8"><input type="text" placeholder="CCV"
+                                                                                maxlength="3" class="ccv"> <br><br>
+    <input type="checkbox" class="checkbox"> accept terms and conditions
+  </section>
+  <br>
+
+  <a href="comment-popup.html" class="btn">Cheerpay now !</a> <br>
+  <a href="video-popup.html" class="skip">go back / cancel</a>
+
+  <footer>
+    <a href="https://www.youtube.com/" target="_blank">www.cheerbud.com</a>
+  </footer>
+
+</div>
+</body>
 </html>

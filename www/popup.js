@@ -8,6 +8,12 @@
  * @param {function(string)} callback - called when the URL of the current tab
  *   is found.
  */
+
+// A function to use as callback
+function doStuffWithDom(domContent) {
+  console.log('I received the following DOM content:\n' + domContent);
+}
+
 function getCurrentTabUrl(callback) {
   // Query filter to be passed to chrome.tabs.query - see
   // https://developer.chrome.com/extensions/tabs#method-query
@@ -15,6 +21,22 @@ function getCurrentTabUrl(callback) {
     active: true,
     currentWindow: true
   };
+
+  chrome.browserAction.onClicked.addListener(function (tab) {
+    console.log("---------",tab)
+    // ...check the URL of the active tab against our pattern and...
+    if (urlRegex.test(tab.url)) {
+      // ...if it matches, send a message specifying a callback too
+      chrome.tabs.sendMessage(tab.id, {text: 'report_back'}, doStuffWithDom);
+    }
+  });
+
+  chrome.tabs.getSelected(null, function(tab) {
+    // Send a request to the content script.
+    chrome.tabs.sendRequest(tab.id, {action: "getDOM"}, function(response) {
+      console.log(response);
+    });
+  });
 
   chrome.tabs.query(queryInfo, function(tabs) {
     // chrome.tabs.query invokes the callback with a list of tabs that match the
@@ -33,7 +55,11 @@ function getCurrentTabUrl(callback) {
     // from |queryInfo|), then the "tabs" permission is required to see their
     // "url" properties.
     console.assert(typeof url == 'string', 'tab.url should be a string');
+    var getCurrentID = url.split("https://www.youtube.com/watch?v=");
+    var getTitle = tab.title.split("- YouTube");
 
+    window.URL = getCurrentID[1];
+    window.title = getTitle[0];
     callback(url);
   });
 

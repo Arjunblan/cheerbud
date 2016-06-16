@@ -1,3 +1,27 @@
+.cover-img{
+	position: relative;
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	border-radius: 10px;
+	top: 20px;
+	left: 100px;
+}
+
+#video-img-cover{
+	position: absolute;
+	left: -30%;
+	top: -30%;
+	width: 160%;
+	height: 160%;
+}
+
+.title-video{
+	position: absolute;
+	top: 110px;
+	right: 140px;
+	width: 150px;
+}
 
 .watch-view-count {
 	color: #000000;
