@@ -102,3 +102,28 @@ footer a {
 	text-decoration: none;
 	font-size: 12px;
 }
+.video-detected {
+	background: #f6f6f6;
+	padding:25px 0;
+}
+.video-detected img {
+	vertical-align: top;
+	margin-left: 30px;
+}
+.video-detected a img {
+	transition: all .2s ease-in-out;
+}
+.video-detected a img:hover {
+	transform: scale(1.1);
+}
+.other-video {
+	padding:25px 0;
+}
+.other-video img {
+	margin-left: 30px;
+}
+.vid-title {
+	text-align: left;
+	color: #a2a2a2;
+	margin: 0 0 20px 120px;
+}
