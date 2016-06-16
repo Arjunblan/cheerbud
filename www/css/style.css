@@ -1,17 +1,22 @@
-body {
+
+.watch-view-count {
+	color: #000000;
+}
+.wrapper {
 	background-color:#ffffff;
 	height: 100%;
 	text-align: center;
 	margin:0;
-	width:500px;
+	width:550px;
+	font-family: 'Poppins', sans-serif;
 }
 .start-1 {
 	margin:40px 30px 0px 30px;
 }
 .start-img {
-	width: 100px;
+	width: ;
 }
-nav {
+.nav {
 	background: #ff6767;
 	padding: 10px;
 	text-align: left;
@@ -25,9 +30,9 @@ nav {
 	margin-top: 13px;
 
 }
-h1 {
+.h1 {
 	color: #ff6767;
-	font-size: 24px;
+	font-size: 20px;
 }
 h2 {
 	color: #ffffff;
@@ -49,27 +54,37 @@ h3 span {
 }
 p {
 	color: #a2a2a2;
-	font-size: 14px;
+	font-size: 12px;
 	margin-bottom: 35px;
 }
 .btn {
-	padding :12px 25px;
+	padding :12px 45px;
 	background: #ff6767;
 	box-shadow: none;
 	border-radius: 8px;
 	color: #ffffff;
 	border: none;
 	text-decoration: none;
+	font-size: 12px;
+}
+.bank-info {
+	margin-bottom: 20px;
+}
+input {
+	padding:10px;
+	border-radius: 8px;
+	border: #d3d3d3 solid 2px;
 }
 textarea {
 	border-radius: 8px;
-	border: #a2a2a2 solid 2px;
+	border: #d3d3d3 solid 2px;
 	height:100px;
-	width:250px;
+	width:300px;
 	display: block;
 	margin:auto;
 	margin-bottom: 30px;
 	padding:5px;
+	resize: none;
 }
 .comment-text {
 	margin-bottom: 15px;
@@ -82,4 +97,8 @@ footer {
 }
 footer a {
 	color: #a2a2a2 !important;
+}
+.skip {
+	text-decoration: none;
+	font-size: 12px;
 }
