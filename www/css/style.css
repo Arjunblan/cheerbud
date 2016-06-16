@@ -46,7 +46,7 @@ h2 {
 h3 {
 	font-size: 60px;
 	color: #ff6767;
-	margin:15px 0;
+	margin:5px 0;
 }
 h3 span {
 	font-size: 16px;
@@ -75,6 +75,12 @@ input {
 	margin: 3px;
 	border-radius: 8px;
 	border: #d3d3d3 solid 2px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	width: 200px;
+}
+.checkbox {
+	width: inherit;
 }
 textarea {
 	border-radius: 8px;
@@ -86,6 +92,7 @@ textarea {
 	margin-bottom: 30px;
 	padding:5px;
 	resize: none;
+	font-family: 'Poppins', sans-serif;
 }
 .comment-text {
 	margin-bottom: 15px;
@@ -94,14 +101,16 @@ footer {
 	color: #a2a2a2;
 	font-size: 10px;
 	text-decoration:underline;
-	margin: 25px 0;
+	margin: 30px 0;
 }
 footer a {
 	color: #a2a2a2 !important;
 }
 .skip {
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 10px;
+	line-height: 5;
+	color: #d8d8d8;
 }
 .video-detected {
 	background: #f6f6f6;
@@ -129,8 +138,16 @@ footer a {
 	margin: 0 0 20px 120px;
 }
 .date {
-	width: 80px;
+	width: 85px;
 }
 .ccv {
-	width: 59px;
+	width: 85px;
+}
+.cheerprice {
+	border:none;
+	width: 75px;
+	font-size: 50px;
+	color:#ff6767;
+	text-align: center;
+	font-weight: bold;
 }
