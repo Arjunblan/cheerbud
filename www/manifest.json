@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "css": ["css/style.css"],
-      "js": [ "jquery.min.js", "content_script.js","script.js" ],
+      "js": [ "jquery.min.js","script.js" ],
       "matches": [ "http://*/*", "https://*/*","<all_urls>" ]
     }
   ],
