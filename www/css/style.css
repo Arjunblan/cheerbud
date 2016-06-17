@@ -22,7 +22,7 @@ body {
 
 .title-video{
 	position: absolute;
-	top: 55px;
+	top: 115px;
 	right: 121px;
 	width: 175px;
 	text-align: left;
@@ -35,7 +35,7 @@ body {
 .cheer-btn {
 	position: absolute;
 	right: 94px;
-	top: 70px;
+	top: 125px;
 }
 
 .watch-view-count {
@@ -72,13 +72,14 @@ body {
 .h1 {
 	color: #ff6767;
 	font-size: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
+	margin-top: 10px;
 }
 h2 {
 	color: #ffffff;
 	font-size: 14px;
 	display: inline-block;
-	margin:0 97px;
+	margin:0 205px;
 	line-height: 40px;
 	vertical-align: top;
 	
@@ -86,7 +87,7 @@ h2 {
 h3 {
 	font-size: 60px;
 	color: #ff6767;
-	margin:30px 0 0 0;
+	margin:15px 0 0 0;
 }
 h3 span {
 	font-size: 16px;
